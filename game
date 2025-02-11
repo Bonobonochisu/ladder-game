@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladder Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Ladder Game <span class="paw">🐾</span></h1>
+        </div>
+        <div class="controls">
+            <select id="playerCount">
+                <option value="2">2P</option>
+                <option value="3">3Pe</option>
+                <option value="4">4P</option>
+                <option value="5">5P</option>
+                <option value="6">6P</option>
+                <option value="7">7P</option>
+                <option value="8">8P</option>
+                <option value="9">9P</option>
+                <option value="10">10P</option>
+            </select>
+            <button onclick="resetGame()">Reset</button>
+        </div>
+        <div class="game-container">
+            <div id="clickAreas"></div>
+            <canvas id="gameCanvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
